@@ -1,1 +1,4 @@
 __pycache__/
+
+app/test_secret.py
+app/test_slack.py
