@@ -1,3 +1,6 @@
-kubernetes==33.1.0
-requests==2.32.4
+kubernetes
+requests
 google-cloud-secret-manager
+reportlab
+slack_sdk
+google-cloud-storage
