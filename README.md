@@ -1,4 +1,4 @@
-# 🤖 Platform Automation
+## 🤖 Platform Automation
 
 <div align="center">
 
@@ -15,7 +15,7 @@
 
 ---
 
-# 📖 Overview
+## 📖 Overview
 
 **Platform Automation** contains the CI/CD workflows responsible for building, securing, versioning, and delivering operational automation workloads to a GitOps-managed Kubernetes platform.
 
@@ -29,8 +29,25 @@ Rather than deploying directly to Kubernetes, this repository follows GitOps pri
 This approach provides a fully auditable, declarative, and automated deployment workflow.
 
 ---
+## 📑 Table of Contents
 
-# 🏗 Repository Responsibilities
+- [📖 Overview](#-overview)
+- [🏗 Repository Responsibilities](#-repository-responsibilities)
+- [🚀 Current Automation](#-current-automation)
+- [🏛 Architecture](#-architecture)
+- [🔄 CI/CD Workflow](#-cicd-workflow)
+- [⚙️ Deployment Workflow](#️-deployment-workflow)
+- [📅 Runtime Execution](#-runtime-execution)
+- [🔐 Secure Authentication](#-secure-authentication)
+- [📦 Technologies](#-technologies)
+- [📂 Repository Structure](#-repository-structure)
+- [🔗 Related Repositories](#-related-repositories)
+- [✨ Key Features](#-key-features)
+- [🎯 Learning Outcomes](#-learning-outcomes)
+- [📄 License](#-license)
+
+---
+## 🏗 Repository Responsibilities
 
 This repository automates:
 
@@ -44,9 +61,9 @@ This repository automates:
 
 ---
 
-# 🚀 Current Automation
+## 🚀 Current Automation
 
-## Daily Platform Report
+### Daily Platform Report
 
 The repository currently builds and delivers the **Daily Platform Report** automation.
 
@@ -63,7 +80,7 @@ The report includes platform health information such as:
 
 ---
 
-# 🏛 Architecture
+## 🏛 Architecture
 
 ```
 Developer
@@ -104,7 +121,7 @@ Slack Notification
 
 ---
 
-# 🔄 CI/CD Workflow
+## 🔄 CI/CD Workflow
 
 The GitHub Actions pipeline performs the following steps:
 
@@ -147,7 +164,7 @@ Deploy Updated CronJob
 
 ---
 
-# ⚙️ Deployment Workflow
+## ⚙️ Deployment Workflow
 
 Unlike traditional CI/CD pipelines, this repository does **not** deploy directly to Kubernetes.
 
@@ -174,7 +191,7 @@ CronJob Deployment
 
 ---
 
-# 📅 Runtime Execution
+## 📅 Runtime Execution
 
 Once deployed, Kubernetes executes the automation according to the CronJob schedule.
 
@@ -199,7 +216,7 @@ Send Slack Notification
 
 ---
 
-# 🔐 Secure Authentication
+## 🔐 Secure Authentication
 
 The CI pipeline authenticates to Google Cloud using **Workload Identity Federation (OIDC)**.
 
@@ -225,7 +242,7 @@ Artifact Registry
 
 ---
 
-# 📦 Technologies
+## 📦 Technologies
 
 | Category | Technologies |
 |----------|--------------|
@@ -241,7 +258,7 @@ Artifact Registry
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 ```
 platform-automation/
@@ -265,7 +282,7 @@ platform-automation/
 
 ---
 
-# 🔗 Related Repositories
+## 🔗 Related Repositories
 
 | Repository | Purpose |
 |------------|---------|
@@ -276,7 +293,7 @@ platform-automation/
 
 ---
 
-# ✨ Key Features
+## ✨ Key Features
 
 - GitHub Actions CI/CD
 - Workload Identity Federation (OIDC)
@@ -291,7 +308,7 @@ platform-automation/
 
 ---
 
-# 🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 
 This project demonstrates practical implementation of:
 
@@ -306,6 +323,6 @@ This project demonstrates practical implementation of:
 
 ---
 
-# 📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
