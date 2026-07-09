@@ -82,42 +82,8 @@ The report includes platform health information such as:
 
 ## 🏛 Architecture
 
-```
-Developer
-    │
-    ▼
-Git Push
-(platform-automation)
-    │
-    ▼
-GitHub Actions
-    │
-    ├── Authenticate to Google Cloud
-    ├── Build Docker Image
-    ├── Push Image to Artifact Registry
-    ├── Checkout GitOps Repository
-    ├── Update Kustomize Image Tag
-    ├── Commit Changes
-    ▼
-GitOps Repository
-(gitops-microservices-platform)
-    │
-    ▼
-ArgoCD
-    │
-    ▼
-Google Kubernetes Engine
-    │
-    ▼
-CronJob
-(Daily Platform Report)
-    │
-    ▼
-Python Automation
-    │
-    ▼
-Slack Notification
-```
+![Architecture](docs/images/flow.png "Architecture")
+
 
 ---
 
