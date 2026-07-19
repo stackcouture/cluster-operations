@@ -46,7 +46,6 @@ This repository automates:
 - CI/CD pipeline execution using GitHub Actions
 
 ---
-
 ## Current Automation
 
 ### Daily Platform Report
@@ -65,14 +64,14 @@ The report includes platform health information such as:
 - Platform summary
 
 ---
-
 ## Architecture
 
-![Architecture](docs/images/flow.png "Architecture")
+<p align="left">
+  <img src="docs/images/flow.png" width="450" alt="Architecture">
+</p>
 
 
 ---
-
 ## CI/CD Workflow
 
 The GitHub Actions pipeline performs the following steps:
@@ -115,7 +114,6 @@ Deploy Updated CronJob
 ```
 
 ---
-
 ## Deployment Workflow
 
 Unlike traditional CI/CD pipelines, this repository does **not** deploy directly to Kubernetes.
@@ -142,7 +140,6 @@ CronJob Deployment
 ```
 
 ---
-
 ## Runtime Execution
 
 Once deployed, Kubernetes executes the automation according to the CronJob schedule.
@@ -167,7 +164,6 @@ Send Slack Notification
 ```
 
 ---
-
 ## Secure Authentication
 
 The CI pipeline authenticates to Google Cloud using **Workload Identity Federation (OIDC)**.
@@ -193,7 +189,6 @@ Artifact Registry
 ```
 
 ---
-
 ## Technologies
 
 | Category | Technologies |
@@ -209,7 +204,6 @@ Artifact Registry
 | Notifications | Slack Webhooks |
 
 ---
-
 ## Repository Structure
 
 ```
@@ -233,7 +227,6 @@ platform-automation/
 ```
 
 ---
-
 ## Related Repositories
 
 | Repository | Purpose |
