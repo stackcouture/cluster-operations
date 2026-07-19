@@ -1,23 +1,9 @@
-## 🤖 Platform Automation
-
-<div align="center">
-
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI/CD-2088FF?style=for-the-badge&logo=githubactions)
-![Google Cloud](https://img.shields.io/badge/Google_Cloud-GCP-4285F4?style=for-the-badge&logo=googlecloud)
-![Docker](https://img.shields.io/badge/Docker-Containers-2496ED?style=for-the-badge&logo=docker)
-![Artifact Registry](https://img.shields.io/badge/Artifact_Registry-Images-blue?style=for-the-badge)
-![GitOps](https://img.shields.io/badge/GitOps-ArgoCD-red?style=for-the-badge)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-GKE-326CE5?style=for-the-badge&logo=kubernetes)
-
-**Production-grade CI/CD automation for cloud-native platform operations**
-
-</div>
 
 ---
 
-## 📖 Overview
+## Overview
 
-**Platform Automation** contains the CI/CD workflows responsible for building, securing, versioning, and delivering operational automation workloads to a GitOps-managed Kubernetes platform.
+**Cluster Operations** contains the CI/CD workflows responsible for building, securing, versioning, and delivering operational automation workloads to a GitOps-managed Kubernetes platform.
 
 Rather than deploying directly to Kubernetes, this repository follows GitOps principles:
 
@@ -29,25 +15,25 @@ Rather than deploying directly to Kubernetes, this repository follows GitOps pri
 This approach provides a fully auditable, declarative, and automated deployment workflow.
 
 ---
-## 📑 Table of Contents
+## Table of Contents
 
-- [📖 Overview](#-overview)
-- [🏗 Repository Responsibilities](#-repository-responsibilities)
-- [🚀 Current Automation](#-current-automation)
-- [🏛 Architecture](#-architecture)
-- [🔄 CI/CD Workflow](#-cicd-workflow)
-- [⚙️ Deployment Workflow](#️-deployment-workflow)
-- [📅 Runtime Execution](#-runtime-execution)
-- [🔐 Secure Authentication](#-secure-authentication)
-- [📦 Technologies](#-technologies)
-- [📂 Repository Structure](#-repository-structure)
-- [🔗 Related Repositories](#-related-repositories)
-- [✨ Key Features](#-key-features)
-- [🎯 Learning Outcomes](#-learning-outcomes)
-- [📄 License](#-license)
+- [Overview](#-overview)
+- [Repository Responsibilities](#-repository-responsibilities)
+- [Current Automation](#-current-automation)
+- [Architecture](#-architecture)
+- [CI/CD Workflow](#-cicd-workflow)
+- [Deployment Workflow](#️-deployment-workflow)
+- [Runtime Execution](#-runtime-execution)
+- [Secure Authentication](#-secure-authentication)
+- [Technologies](#-technologies)
+- [Repository Structure](#-repository-structure)
+- [Related Repositories](#-related-repositories)
+- [Key Features](#-key-features)
+- [Learning Outcomes](#-learning-outcomes)
+- [License](#-license)
 
 ---
-## 🏗 Repository Responsibilities
+## Repository Responsibilities
 
 This repository automates:
 
@@ -61,7 +47,7 @@ This repository automates:
 
 ---
 
-## 🚀 Current Automation
+## Current Automation
 
 ### Daily Platform Report
 
@@ -80,14 +66,14 @@ The report includes platform health information such as:
 
 ---
 
-## 🏛 Architecture
+## Architecture
 
 ![Architecture](docs/images/flow.png "Architecture")
 
 
 ---
 
-## 🔄 CI/CD Workflow
+## CI/CD Workflow
 
 The GitHub Actions pipeline performs the following steps:
 
@@ -130,7 +116,7 @@ Deploy Updated CronJob
 
 ---
 
-## ⚙️ Deployment Workflow
+## Deployment Workflow
 
 Unlike traditional CI/CD pipelines, this repository does **not** deploy directly to Kubernetes.
 
@@ -157,7 +143,7 @@ CronJob Deployment
 
 ---
 
-## 📅 Runtime Execution
+## Runtime Execution
 
 Once deployed, Kubernetes executes the automation according to the CronJob schedule.
 
@@ -182,7 +168,7 @@ Send Slack Notification
 
 ---
 
-## 🔐 Secure Authentication
+## Secure Authentication
 
 The CI pipeline authenticates to Google Cloud using **Workload Identity Federation (OIDC)**.
 
@@ -208,7 +194,7 @@ Artifact Registry
 
 ---
 
-## 📦 Technologies
+## Technologies
 
 | Category | Technologies |
 |----------|--------------|
@@ -224,7 +210,7 @@ Artifact Registry
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 platform-automation/
@@ -248,7 +234,7 @@ platform-automation/
 
 ---
 
-## 🔗 Related Repositories
+## Related Repositories
 
 | Repository | Purpose |
 |------------|---------|
@@ -258,8 +244,7 @@ platform-automation/
 | **platform-automation** | CI/CD pipelines and operational automation |
 
 ---
-
-## ✨ Key Features
+## Key Features
 
 - GitHub Actions CI/CD
 - Workload Identity Federation (OIDC)
@@ -273,8 +258,7 @@ platform-automation/
 - Production-inspired deployment workflow
 
 ---
-
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 This project demonstrates practical implementation of:
 
@@ -288,7 +272,6 @@ This project demonstrates practical implementation of:
 - Cloud-native CI/CD best practices
 
 ---
-
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
