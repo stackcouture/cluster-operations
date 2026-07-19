@@ -17,20 +17,21 @@ This approach provides a fully auditable, declarative, and automated deployment 
 ---
 ## Table of Contents
 
-- [Overview](#-overview)
-- [Repository Responsibilities](#-repository-responsibilities)
-- [Current Automation](#-current-automation)
-- [Architecture](#-architecture)
-- [CI/CD Workflow](#-cicd-workflow)
-- [Deployment Workflow](#️-deployment-workflow)
-- [Runtime Execution](#-runtime-execution)
-- [Secure Authentication](#-secure-authentication)
-- [Technologies](#-technologies)
-- [Repository Structure](#-repository-structure)
-- [Related Repositories](#-related-repositories)
-- [Key Features](#-key-features)
-- [Learning Outcomes](#-learning-outcomes)
-- [License](#-license)
+- [Overview](#overview)
+- [Repository Responsibilities](#repository-responsibilities)
+- [Current Automation](#current-automation)
+  - [Daily Platform Report](#daily-platform-report)
+- [Architecture](#architecture)
+- [CI/CD Workflow](#cicd-workflow)
+- [Deployment Workflow](#deployment-workflow)
+- [Runtime Execution](#runtime-execution)
+- [Secure Authentication](#secure-authentication)
+- [Technologies](#technologies)
+- [Repository Structure](#repository-structure)
+- [Related Repositories](#related-repositories)
+- [Key Features](#key-features)
+- [Learning Outcomes](#learning-outcomes)
+- [License](#license)
 
 ---
 ## Repository Responsibilities
